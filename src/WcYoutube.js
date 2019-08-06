@@ -32,7 +32,7 @@ export class WcYoutube extends LitElement {
       loop: { type: Number },
       modestbranding: { type: Number },
       origin: { type: Number },
-      playlist: { type: Array },
+      playlist: { type: String },
       playsinline: { type: Number },
       widget_referrer: { type: String }
     };
@@ -52,15 +52,15 @@ export class WcYoutube extends LitElement {
     this.loop = 0;
     this.origin = window.location.origin;
     this.widget_referrer = window.location.href;
-    this.playlist = [];
     this.playsinline = 0;
   }
 
   get generateVideoUrl() {
     let options = {};
     let url = `https://www.youtube.com/embed`;
-    console.log('TYPE', this.listType, this.list);
-    url += (this.listType && this.list) ? `?listType=${this.listType}&list=${this.list}&` : `/${this.videoId}?`;
+    url += (this.listType && this.list) 
+      ? `?listType=${this.listType}&list=${this.list}&` 
+      : `/${this.videoId}?`;
 
     this.autoplay === 1 ? options['autoplay'] = String(this.autoplay) : null;
     this.start ? options['start'] = String(this.start) : null;
@@ -75,6 +75,7 @@ export class WcYoutube extends LitElement {
     this.hl === 1 ? options['hl'] = String(this.hl) : null;
     this.iv_load_policy === 1 ? options['iv_load_policy'] = String(this.iv_load_policy) : null;
     this.loop === 1 ? options['loop'] = String(this.loop) : null;
+    this.playlist !== '' ? options['playlist'] = this.playlist : null;
     this.playsinline === 1 ? options['playsinline'] = String(this.playsinline) : null;
     this.origin ? options['origin'] = this.origin : null;
     this.widget_referrer ? options['widget_referrer'] = this.widget_referrer : null;
