@@ -30,6 +30,8 @@ yarn add wc-youtube
 Click [here](https://stefannieuwenhuis.github.io/wc-youtube) to see the component live.
 
 ## Attributes
+The following attributes are available: 
+
 | Attribute | Type | Default value | Description | Possible values |
 |-----------|------|---------------|-------------|-----------------|
 | `autoplay` | number | 0 | Specifies if a video automatically stats playing when the player loads | 0, 1 |
@@ -54,3 +56,9 @@ Click [here](https://stefannieuwenhuis.github.io/wc-youtube) to see the componen
 | `start` | string | null | Specifies the time, measured in seconds from the start of the video, when the player should start playing the video | any positive integer |
 | `width` | number | 500 | Specifies the width of the player | any positive integer |
 | `widget_referrer` | string | `window.location.href` | Specifies the URL where the player is embedded | the url of the page |
+
+Usage: 
+
+```html
+<wc-youtube attribute="value"></wc-youtube>
+```
