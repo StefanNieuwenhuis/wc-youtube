@@ -8,6 +8,11 @@ By [Stefan Nieuwenhuis](https://twitter.com/stefannhs)
 [![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/wc-youtube)
 
 ## Installation
+```html
+# via UNPKG
+<script type="module" src="https://unpkg.com/wc-youtube@latest/dist/wc-youtube.js"></script>
+```
+
 ```bash
 # via npm
 npm i wc-youtube
