@@ -5,6 +5,7 @@ By [Stefan Nieuwenhuis](https://twitter.com/stefannhs)
 
 ![npm (tag)](https://img.shields.io/npm/v/wc-youtube/latest)
 ![npm](https://img.shields.io/npm/dw/wc-youtube)
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/wc-youtube)
 
 ## Installation
 ```bash
@@ -21,7 +22,7 @@ yarn add wc-youtube
   import 'wc-youtube/wc-youtube.js';
 </script>
 
-<wc-youtube></wc-youtube>
+<wc-youtube videoId="[enter-a-valid-YT-video-id-here]"></wc-youtube>
 ```
 
 ## Demo 
