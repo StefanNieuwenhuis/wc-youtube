@@ -3,8 +3,8 @@ A Web Component that allows you to embed a YouTube player in your application.
 
 By [Stefan Nieuwenhuis](https://twitter.com/stefannhs)
 
-![npm (tag)](https://img.shields.io/npm/v/wc-trombone/latest)
-![npm](https://img.shields.io/npm/dw/wc-trombone)
+![npm (tag)](https://img.shields.io/npm/v/wc-youtube/latest)
+![npm](https://img.shields.io/npm/dw/wc-youtube)
 
 ## Installation
 ```bash
