@@ -23,19 +23,11 @@ yarn add wc-youtube
 
 ## Usage
 ```html
-<script type="module">
-  import 'wc-youtube/wc-youtube.js';
-</script>
-
 <wc-youtube videoId="[enter-a-valid-YT-video-id-here]"></wc-youtube>
 ```
 
 ## Demo 
-<custom-element-demo>
-  <template>
-    <wc-youtube videoId="M7lc1UVf-VE"></wc-youtube>
-  </template>
-</custom-element-demo>
+
 
 ## Attributes
 | Attribute | Type | Default value | Description | Possible values |
