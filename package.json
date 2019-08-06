@@ -2,7 +2,7 @@
   "name": "wc-youtube",
   "version": "0.0.5",
   "description": "Webcomponent wc-youtube following open-wc recommendations",
-  "author": "wc-youtube",
+  "author": "Stefan Nieuwenhuis",
   "license": "MIT",
   "main": "dist/wc-youtube.js",
   "module": "dist/wc-youtube.js",
@@ -11,6 +11,14 @@
     "type": "git",
     "url": "https://github.com/StefanNieuwenhuis/wc-youtube.git"
   },
+  "keywords": [
+    "youtube",
+    "lit-html",
+    "lit-element",
+    "web-components",
+    "web-component",
+    "custom-element"
+  ],
   "scripts": {
     "build": "rimraf dist && rollup -c rollup.config.js",
     "start": "es-dev-server --app-index demo/index.html --node-resolve --open --watch",
