@@ -27,7 +27,7 @@ yarn add wc-youtube
 ```
 
 ## Demo 
-
+Click [here](https://stefannieuwenhuis.github.io/wc-youtube) to see the component live.
 
 ## Attributes
 | Attribute | Type | Default value | Description | Possible values |
