@@ -24,6 +24,13 @@ yarn add wc-youtube
 <wc-youtube></wc-youtube>
 ```
 
+## Demo 
+<custom-element-demo>
+  <template>
+    <wc-youtube videoId="M7lc1UVf-VE"></wc-youtube>
+  </template>
+</custom-element-demo>
+
 ## Attributes
 | Attribute | Type | Default value | Description | Possible values |
 |-----------|------|---------------|-------------|-----------------|
@@ -36,6 +43,7 @@ yarn add wc-youtube
 | `enablejsapi` | number | 0 | Specifies if the player responds to IFrame of JavaScript api calls | 0, 1 |
 | `end` | number | null | Specifies the time, measured in seconds from the start of the video, when the player should stop playing the video | any positive integer |
 | `fs` | number | 1 | Specifies if the fullscreen button is displayed | 0, 1 |
+| `height` | number | 500 | Specifies the height of the player | any positive integer |
 | `hl` | string | en | Specifies the interface language ([ISO 639-1 format](http://www.loc.gov/standards/iso639-2/php/code_list.php) | Any ISO 639-1 two-letter language code |
 | `iv_load_policy` | number | 1 | Specifies if video annotations are shown | 1, 2, 3 |
 | `list` | string | null | Specifies the content that will load in the player | searchquery, username or playlistID | 
@@ -46,4 +54,5 @@ yarn add wc-youtube
 | `playlist` | string | [] | Specifies a comma seperated list of videoId's to play. Video's in the list property will play after | any comma seperated list of valid videoId's |
 | `playsinline` | number | 0 | Specifies if videos play inline or fullscreen in an HTML5 player on iOS | 0, 1 |
 | `start` | string | null | Specifies the time, measured in seconds from the start of the video, when the player should start playing the video | any positive integer |
+| `width` | number | 500 | Specifies the width of the player | any positive integer |
 | `widget_referrer` | string | `window.location.href` | Specifies the URL where the player is embedded | the url of the page |

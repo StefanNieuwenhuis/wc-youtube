@@ -53,6 +53,8 @@ export class WcYoutube extends LitElement {
     this.origin = window.location.origin;
     this.widget_referrer = window.location.href;
     this.playsinline = 0;
+    this.width = 500;
+    this.height = 500;
   }
 
   get generateVideoUrl() {
