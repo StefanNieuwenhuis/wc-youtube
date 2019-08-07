@@ -4,13 +4,17 @@
   "description": "Webcomponent wc-youtube following open-wc recommendations",
   "author": "Stefan Nieuwenhuis",
   "license": "MIT",
-  "main": "dist/wc-youtube.js",
+  "main": "dist/legacy/wc-youtube.js",
   "module": "dist/wc-youtube.js",
-  "unpkg": "dist/wc-youtube.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/StefanNieuwenhuis/wc-youtube.git"
   },
+  "files": [
+    "dist",
+    "package.json",
+    "README.MD"
+  ],
   "keywords": [
     "youtube",
     "lit-html",
@@ -21,7 +25,7 @@
   ],
   "scripts": {
     "build": "rimraf dist && rollup -c rollup.config.js",
-    "start": "es-dev-server --app-index demo/index.html --node-resolve --open --watch",
+    "start": "es-dev-server --app-index dist/index.html --node-resolve --open --watch",
     "start:compatibility": "es-dev-server --app-index demo/index.html --compatibility all --node-resolve --open --watch",
     "lint:eslint": "eslint --ext .js,.html . --ignore-path .gitignore",
     "format:eslint": "eslint --ext .js,.html . --fix --ignore-path .gitignore",
